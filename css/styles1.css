@@ -1,0 +1,177 @@
+@media (max-width: 1200px) {
+  .first-side p,
+  .second-side p {
+    width: 550px;
+  }
+
+  .title-section {
+    font-size: 35px;
+  }
+
+  .button {
+    width: 400px;
+    font-size: 18px;
+  }
+
+  .second-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #tacseg {
+    width: 80%;
+    height: auto;
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    background-color: #fff;
+    transition: max-height 1.5s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  .nav-links li {
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+    transition: background-color 0.3s ease;
+  }
+
+  .nav-links li:hover {
+    background-color: #f1f1f1;
+  }
+
+  .nav-links.active {
+    display: flex;
+    max-height: 500px;
+  }
+
+  .hamburger-menu {
+    display: flex;
+  }
+
+  /* Transformações do menu hambúrguer */
+  .hamburger-menu.active .bar:nth-child(1) {
+    transform: rotate(-45deg) translate(-5px, 6px);
+  }
+
+  .hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger-menu.active .bar:nth-child(3) {
+    transform: rotate(45deg) translate(-5px, -6px);
+  }
+
+  .first-container {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .first-side {
+    text-align: center;
+    align-items: center;
+  }
+
+  .first-side p {
+    width: 80%;
+  }
+
+  .second-section {
+    margin-bottom: 100px;
+  }
+
+  .second-side p {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .second-side button {
+    margin: 0 auto;
+  }
+
+  .testimonial-carousel {
+    width: 90%;
+  }
+
+  .title-section {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .third-part h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  nav h2 {
+    font-size: 30px;
+  }
+
+  .slider {
+    width: 410px;
+  }
+
+  .slider li:nth-child(1) label {
+    left: 10px;
+  }
+
+  .slider li:nth-child(2) label {
+    left: 40px;
+    top: 254px;
+  }
+
+  .slider li:nth-child(3) label {
+    left: 70px;
+    top: 254px;
+  }
+
+  .link {
+    font-size: 1rem;
+  }
+
+  .first-side p,
+  .second-side p {
+    font-size: 18px;
+  }
+
+  .title-section {
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .button {
+    width: 90%;
+    font-size: 16px;
+  }
+
+  footer {
+    font-size: 10px;
+  }
+
+  .third-part h2 {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .article {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  .article h2 {
+    font-size: 30px;
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TacSeg Title</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/styles1.css" />
+    <link rel="icon" type="logoWhite.png" href="./assets/logo.jpg" />
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/script2.js" defer></script>
+    <script src="scripts/script3.js" defer></script>
+    <script src="scripts/script4.js" defer></script>
+    <script src="scripts/script5.js" defer></script>
+    <script src="scripts/script6.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <h2>TACSEG</h2>
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <ul class="nav-links">
+          <li><a href="#inicio" class="link">Início</a></li>
+          <li><a href="#servicos" class="link">Serviços</a></li>
+          <li><a href="#depoimentos" class="link">Depoimentos</a></li>
+          <li><a href="#contato" class="link">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="first-container" id="inicio">
+      <section>
+        <img src="./assets/logo.jpg" alt="logo" id="logo-tacseg" />
+        <div class="first-side">
+          <h2 class="title-section">Sua segurança é nossa missão</h2>
+          <p>
+            A manutenção de sistemas de segurança eletrônica é fundamental para
+            garantir a proteção contínua e eficiente de sua residência ou
+            empresa. Com a evolução constante da tecnologia, é essencial que
+            seus equipamentos estejam sempre atualizados e em perfeito
+            funcionamento. Nosso serviço de manutenção oferece inspeções
+            regulares, diagnósticos precisos e reparos rápidos, assegurando que
+            câmeras de vigilância, alarmes, sensores e outros dispositivos
+            estejam sempre operando em sua capacidade máxima. Além disso, nossos
+            técnicos altamente qualificados utilizam as melhores práticas do
+            mercado para identificar e solucionar problemas antes que se tornem
+            críticos, prevenindo falhas e garantindo a segurança ininterrupta do
+            seu patrimônio. Conte conosco para manter seus sistemas de segurança
+            sempre prontos para proteger o que você mais valoriza.
+          </p>
+          <button class="button">
+            Entre em contato
+            <a href="https://wa.me/5541999897858" target="_blank"
+              ><img src="./assets/whatsapp-icone.png"
+            /></a>
+          </button>
+        </div>
+      </section>
+      <aside class="first-carousel">
+        <ul class="slider">
+          <li>
+            <input type="radio" id="slide1" name="slide" checked />
+            <label for="slide1"></label>
+            <img src="./assets/camera-seguranca.jpg" />
+          </li>
+          <li>
+            <input type="radio" id="slide2" name="slide" />
+            <label for="slide2"></label>
+            <img src="./assets/alarm.jpg" />
+          </li>
+          <li>
+            <input type="radio" id="slide3" name="slide" />
+            <label for="slide3"></label>
+            <img src="./assets/interfone.png" />
+          </li>
+          <button class="prev" onclick="prevSlide()">&#10094;</button>
+          <button class="next" onclick="nextSlide()">&#10095;</button>
+        </ul>
+      </aside>
+    </div>
+
+    <section class="second-section" id="servicos">
+      <img src="./assets/tacseg.jpg" alt="tacseg" id="tacseg" />
+      <div class="second-side">
+        <h2 class="title-section">Sua segurança é nossa missão</h2>
+        <p>
+          A instalação de sistemas de segurança eletrônica e alarmes é um
+          investimento indispensável para a proteção de sua casa ou empresa.
+          Nossa equipe especializada oferece soluções personalizadas, projetadas
+          para atender às suas necessidades específicas de segurança. Desde a
+          avaliação inicial do local até a configuração final, garantimos uma
+          instalação meticulosa e eficiente de câmeras de vigilância, alarmes,
+          sensores de movimento, interfone e outros dispositivos de segurança.
+          Utilizamos equipamentos de última geração e tecnologias avançadas para
+          proporcionar uma cobertura completa e confiável. Além disso,
+          oferecemos suporte contínuo e orientações detalhadas para que você
+          possa operar seus sistemas com facilidade e confiança. Confie na nossa
+          expertise para proteger seu patrimônio com a mais alta qualidade e
+          segurança.
+        </p>
+        <button class="button">
+          Entre em contato
+          <a href="https://wa.me/5541999897858" target="_blank"
+            ><img src="./assets/whatsapp-icone.png"
+          /></a>
+        </button>
+      </div>
+    </section>
+    <div class="third-part" id="depoimentos">
+      <h2>Depoimentos dos nossos clientes</h2>
+    </div>
+    <section class="testimonial-carousel">
+      <div class="carousel-inner">
+        <div class="testimonial-card">
+          <h4>Nome 1</h4>
+          <p>
+            "Este produto transformou minha vida! A qualidade é incrível e os
+            resultados são visíveis desde o primeiro uso. Recomendo a todos que
+            procuram uma mudança positiva."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <h4>Nome 2</h4>
+          <p>
+            "O serviço é excelente, e o atendimento é de alta qualidade. Toda a
+            equipe foi extremamente profissional e atenciosa, garantindo uma
+            experiência maravilhosa do início ao fim."
+          </p>
+        </div>
+        <div class="testimonial-card">
+          <h4>Nome 3</h4>
+          <p>
+            "Fiquei impressionado com a rapidez da entrega. Além disso, o
+            produto chegou em perfeito estado, superando minhas expectativas.
+            Com certeza, voltarei a comprar!"
+          </p>
+        </div>
+      </div>
+      <button class="prev-slide" onclick="prevTestimonialSlide()">
+        &#10094;
+      </button>
+      <button class="next-slide" onclick="nextTestimonialSlide()">
+        &#10095;
+      </button>
+    </section>
+    <article class="article" id="contato">
+      <h2>
+        Estamos aqui para te ajudar <br />
+        <span>Entre em contato</span>
+      </h2>
+      <div class="form-container">
+        <form
+          action="https://formsubmit.co/ajax/lucaszrones@gmail.com"
+          method="POST"
+          data-form
+        >
+          <label for="name">Seu nome</label>
+          <input type="text" id="name" name="name" required />
+
+          <label for="email">Seu e-mail</label>
+          <input type="email" id="email" name="email" required />
+
+          <label for="message">Sua mensagem</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <button type="submit" data-button>Enviar</button>
+        </form>
+      </div>
+    </article>
+    <footer>Copyright ©| Tacseg 2024 | Todos os direitos reservados</footer>
+    <button id="backToTop" title="Voltar ao topo">↑</button>
+  </body>
+</html>
