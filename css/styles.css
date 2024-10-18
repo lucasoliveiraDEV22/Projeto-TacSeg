@@ -155,6 +155,7 @@ nav ul li {
 .slider li {
   list-style: none;
   position: absolute;
+  width: 500px;
 }
 
 .slider img {
