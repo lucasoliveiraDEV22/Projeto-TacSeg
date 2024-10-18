@@ -113,7 +113,8 @@ class FormSubmit {
             'Content-Type': 'application/json',
             Accept: 'application/json'
           },
-          body: JSON.stringify(this.getFormObject())
+          body: JSON.stringify(this.getFormObject()),
+          mode: 'no-cors' // Adiciona o modo no-cors
         });
         if (response.ok) {
           this.displaySuccess();
