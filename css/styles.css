@@ -463,3 +463,15 @@ footer {
   background-color: #555; /* Muda a cor de fundo ao passar o mouse */
 }
 
+.scroll-fade {
+  opacity: 0;
+  transition: opacity 1.5s ease-in-out;
+}
+
+.scroll-fade.visible {
+  opacity: 1;
+}
+
+.scroll-fade.hidden {
+  opacity: 0;
+}
