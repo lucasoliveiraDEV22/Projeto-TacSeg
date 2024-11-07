@@ -26,3 +26,17 @@ document.addEventListener('DOMContentLoaded', function () {
       lastScrollY = currentScrollY;
     });
   });
+
+  document.addEventListener("DOMContentLoaded", function () {
+    const switchModeButton = document.getElementById("switchMode");
+  
+    // Alterna a classe 'dark-mode' no body ao clicar no botão
+    switchModeButton.addEventListener("click", function () {
+      document.body.classList.toggle("dark-mode");
+  
+      // Alterna a classe 'dark-mode' para os links de navegação e botões
+      document.querySelectorAll(".link, .button").forEach(el => {
+        el.classList.toggle("dark-mode");
+      });
+    });
+  });

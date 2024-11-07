@@ -73,6 +73,36 @@ nav ul li {
   transition: 0.4s;
 }
 
+/* Tema claro (default) */
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.nav-links .link {
+  color: #000000;
+}
+
+.button {
+  background-color: #00c16c;
+  color: #ffffff;
+}
+
+/* Tema escuro */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+.nav-links .link.dark-mode {
+  color: #ffffff;
+}
+
+.button.dark-mode {
+  background-color: #1b8798;
+  color: #ffffff;
+}
+
 .first-container {
   display: flex;
   justify-content: space-around;

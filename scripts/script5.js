@@ -51,7 +51,7 @@ class FormSubmit {
     this.form.innerHTML = this.settings.success;
     setTimeout(() => {
       window.location.href = '/';
-    }, 5000);
+    }, 3000);
   }
 
   displayError(message) {
@@ -99,8 +99,8 @@ class FormSubmit {
       return false;
     }
 
-    event.target.disabled = true;
-    event.target.innerText = 'Enviando...';
+    this.formButton.disabled = true;
+    this.formButton.innerText = 'Enviando...';
     return true;
   }
 
@@ -113,8 +113,7 @@ class FormSubmit {
             'Content-Type': 'application/json',
             Accept: 'application/json'
           },
-          body: JSON.stringify(this.getFormObject()),
-          mode: 'no-cors' // Adiciona o modo no-cors
+          body: JSON.stringify(this.getFormObject())
         });
         if (response.ok) {
           this.displaySuccess();
