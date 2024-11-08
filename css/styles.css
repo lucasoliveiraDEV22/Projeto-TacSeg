@@ -103,6 +103,19 @@ body.dark-mode {
   color: #ffffff;
 }
 
+#switchMode{
+  width: 50px;
+  height: 50px;
+  border-radius: 10%;
+  border: none;
+  transition: 1s ease-in;
+  cursor: pointer;
+}
+
+#switchMode:hover{
+  background-color: #003f69;
+}
+
 .first-container {
   display: flex;
   justify-content: space-around;
